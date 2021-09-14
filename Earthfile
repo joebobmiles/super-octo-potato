@@ -8,5 +8,5 @@ docker-setup:
     SAVE ARTIFACT ./*
 
 web:
-    FROM DOCKERFILE --build-arg service=web +docker-setup
+    FROM DOCKERFILE --build-arg service=web +docker-setup/
     SAVE IMAGE test-web
